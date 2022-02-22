@@ -118,15 +118,17 @@ body {
 
 .six img {
   display: inline-block;
-  max-width: 100%;
+  max-width: 30%;
+  max-height: 30%;
   height: auto;
+  margin-top: 7rem;
 }
 
 .six .hat {
   position: absolute;
   width: 80px;
-  top: -35px;
-  left: 41.5%;
+  left: 45%;
+  display: none;
   /* transform: scale(0.1); */
 }
 
@@ -227,6 +229,15 @@ body {
   font-weight: lighter;
 }
 
+.nine img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 497px;
+  height: 701px;
+  margin-left: 7rem;
+}
+
 #replay {
   z-index: 3;
   cursor: pointer;
@@ -236,24 +247,28 @@ body {
 @media screen and (max-height: 1000px) {
   .six .hat {
     left: 40%;
+    display: none;
   }
 }
 
 @media screen and (max-height: 800px) {
   .six .hat {
-    left: 37%;
+    left: 45%;
+    display: none;
   }
 }
 
 @media screen and (max-height: 700px) {
   .six .hat {
     left: 32%;
+    display: none;
   }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
     left: 32%;
+    display:none;
   }
 }
 
@@ -282,6 +297,7 @@ body {
   .six .hat {
     width: 50px;
     top: -20px;
+    display: none;
   }
 
   .wish-hbd {
